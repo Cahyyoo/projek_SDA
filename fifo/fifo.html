@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Queue - FIFO</title>
+    <link rel="stylesheet" href="stylesFifo.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Simulasi Queue - FIFO</h1>
+            <p>Berikut adalah konsep FIFO (<i>First In, First Out</i>) yang telah di simulasikan.</p>
+        </header>
+
+        <main>
+            <div class="queue-section">
+                <h2>Visualisasi Antrian</h2>
+                <div class="queue-container">
+                    <div class="queue-visual" id="queue"></div>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <p class="progress-text">Kapasitas: <span id="queue-length">0</span>/5</p>
+            </div>
+
+            <div class="controls-section">
+                <h2>Kontrol</h2>
+                <div class="controls">
+                    <button id="enqueue" class="btn">Tambah Elemen</button>
+                    <button id="dequeue" class="btn btn-danger">Hapus Elemen</button>
+                </div>
+                <p id="status" class="status">Antrian kosong</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Simulasi ini dirancang untuk membantu memahami cara kerja konsep <b>FIFO</b>.</p>
+        </footer>
+    </div>
+    <div class="toogle">
+        <a href="../menu.html" class="kiri">Back</a>
+        <a href="quiz1.html" class="kanan">Next</a>
+    </div>
+    <script src="scriptFifo.js"></script>
+</body>
+</html>

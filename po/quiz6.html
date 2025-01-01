@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Queue - PO</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-image: url('../img/quis6.png');
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 90px;
+        }
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .card {
+            width: 350px;
+            height: 80px;
+            /* background-color: red; */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card" id="card1"></div>
+            <div class="card" id="card2"></div>
+        </div>
+        <div class="row">
+            <div class="card" id="card3"></div>
+            <div class="card" id="card4"></div>
+        </div>
+    </div>
+
+    <script>
+        const card1 = document.getElementById('card1');
+        const card2 = document.getElementById('card2');
+        const card3 = document.getElementById('card3');
+        const card4 = document.getElementById('card4');
+        
+        card1.addEventListener('click', () => {
+            alert('Jawaban anda salah!')
+        });
+
+        card2.addEventListener('click', () => {
+            alert('Jawaban anda benar!');
+            window.location.href = '../siro/siro.html';
+        });
+
+        card3.addEventListener('click', () => {
+            alert('Jawaban anda salah!')
+        });
+
+        card4.addEventListener('click', () => {
+            alert('Jawaban anda salah!')
+        });
+
+        
+
+    </script>
+
+</body>
+</html>
